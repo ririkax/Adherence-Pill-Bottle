@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 
 .tab-content{
 margin-left: 50px;
 
 }
-=======
->>>>>>> f69a265e793f0990cf58ffa62478ec7c0ceda8f1
 .menu{
 	overflow-x: hidden;
 	position: relative;
@@ -17,7 +14,6 @@ margin-left: 50px;
 }
 .menu-open.menu-side{
 
-<<<<<<< HEAD
 	left: 0px; 
 }
 
@@ -25,11 +21,6 @@ margin-left: 50px;
 
 .menu-side,
 .menu-toggle,
-=======
-	left: 0 
-}
-.menu-side,
->>>>>>> f69a265e793f0990cf58ffa62478ec7c0ceda8f1
 .menu{
 	-webkit-transition: left 0.2s ease;
 	-moz-transition: left 0.2s ease;
@@ -37,7 +28,6 @@ margin-left: 50px;
 
 }
 
-<<<<<<< HEAD
 .menu-side{
 	background-color: #333;
 	border-right: 1px solid #000;
@@ -45,20 +35,10 @@ margin-left: 50px;
 	position: fixed;
 	box-sizing:border-box;
 	top:0px;
-=======
-
-.menu-side{
-	background-color: #111;
-	border-right: 1px solid #000;
-	color: #fff;
-	position: fixed;
-	top:0;
->>>>>>> f69a265e793f0990cf58ffa62478ec7c0ceda8f1
 	left:-231px;
 	width: 210px;
 	height: 100%;
 	padding: 10px;
-<<<<<<< HEAD
 }
 
 .menu-toggle{
@@ -86,6 +66,4 @@ margin-left: 50px;
 .menu-side.menu-open.menu-toggle:before{
 	content: "\2190";
 
-=======
->>>>>>> f69a265e793f0990cf58ffa62478ec7c0ceda8f1
 }
