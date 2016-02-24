@@ -5,20 +5,14 @@
 	<title>Doctor - Patient Prescription Page</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/my.css" media="screen" title="no title" charset="utf-8">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/my.css" media="screen" title="no title" charset="utf-8">
 	<!-- font -->
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
 
-	<style>
-
-	body {
-		/*background-color: #bdc3c7;*/
-		font-family: "Helvetica Neue";
-	}
-
-	</style>
+	
 	<script>
 		function toggleActive(element){
 			//should only be one
@@ -74,17 +68,39 @@
     </nav>
 
 		<div class="dashboard">
-			<div class="">
-				<span style="margin-left:20px">Search:</span>
-				<input type="text" name="FirstName" value="Mickey">
-				<button type="button" name="button" class="btn btn-default"><i class="fa fa-search"></i></button>
-				<button id="monthly" type="button" name="button" class="btn btn-default">monthly view</button>
-			</div>
-			<div class="title">
-				<i class="fa fa-chevron-left"></i>
-				<span style="margin: 0 10px; font-size:24px">Today's Prescription</span>
-				<i class="fa fa-chevron-right"></i>
-			</div>
+			<!-- <div class="search_group"> -->
+				<!--<input type="text" name="FirstName" value="Mickey"> -->
+				<!-- <button id = "search_btn" type="button" name="button" class="btn btn-default"><i class="fa fa-search"></i></button> -->
+
+				<div class="container_first_row">
+					<div class="row">
+				        <div class=" search_group col-md-3">
+				                <div class="input-group">
+				                    <input id ="search_text" type="text" class="form-control input-lg" placeholder="Medicine" />
+				                    <span class="input-group-btn">
+				                        <button class="btn btn-info btn-lg search_button" type="button">
+				                            <i class="glyphicon glyphicon-search" id = "search_icon"></i>
+				                        </button>
+				                    </span>
+				                </div>
+						</div>
+
+						<div class="today_pre col-md-5 "> <!-- change from title to today_pre -->
+							<i class="fa fa-chevron-left"></i>
+							<span>Today's Prescription</span>
+							<i class="fa fa-chevron-right"></i>
+						</div>
+
+						<div class="monthly_container col-md-3 ">
+							<button id="monthly" type="button" name="button" class="btn btn-default">Monthly View</button>
+						</div>
+
+
+					</div>
+				</div>
+
+
+						
 			<div class="container my-panel">
 				<div id='morning' class="col-md-4">
 					<div class="child-title">
@@ -96,13 +112,13 @@
 					    <li class="list-group-item" >
 								<i class="fa fa-plus-square"></i>
 								<span class="badge">4</span>
-								<button type="button" class="formodal" data-toggle="modal" data-target="#myModal">Tamiflu</button></li>
+								<button type="button" class="formodal" data-toggle="modal" data-target="#myModal">Tamiflu</button><time>11:00am</time></li>
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">10</span>Altace</li>
+								<span class="badge">10</span>Altace<time>11:00am</time></li>
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">2</span>Propulsid</li>
+								<span class="badge">2</span>Propulsid<time>11:00am</time></li>
 					  </ul>
 					</div>
 
@@ -116,19 +132,19 @@
 						<ul class="list-group">
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">12</span> New</li>
+								<span class="badge">12</span> New<time>11:00am</time></li>
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">5</span> Deleted</li>
+								<span class="badge">5</span> Deleted<time>11:00am</time></li>
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">3</span> Warnings</li>
+								<span class="badge">3</span> Warnings<time>11:00am</time></li>
 							<li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">5</span> Deleted</li>
+								<span class="badge">5</span> Deleted<time>11:00am</time></li>
 					    <li class="list-group-item">
 								<i class="fa fa-plus-square"></i>
-								<span class="badge">3</span> Warnings</li>
+								<span class="badge">3</span> Warnings<time>11:00am</time></li>
 					  </ul>
 					</div>
 				</div>
@@ -140,11 +156,11 @@
 					<div class=" child-panel">
 						<ul class="list-group">
 					    <li class="list-group-item"><i class="fa fa-plus-square"></i>
-<span class="badge">12</span> New</li>
+<span class="badge">12</span> New<time>11:00am</time></li>
 					    <li class="list-group-item"><i class="fa fa-plus-square"></i>
-<span class="badge">5</span> Deleted</li>
+<span class="badge">5</span> Deleted<time>11:00am</time></li>
 					    <li class="list-group-item"><i class="fa fa-plus-square"></i>
-<span class="badge">3</span> Warnings</li>
+<span class="badge">3</span> Warnings<time>11:00am</time></li>
 					  </ul>
 					</div>
 				</div>
@@ -182,6 +198,7 @@
 
 		  </div>
 		</div>
+</div>
 
 
 
